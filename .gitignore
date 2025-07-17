@@ -137,3 +137,10 @@ http-client.private.env.json
 # Apifox Helper cache
 .idea/.cache/.Apifox_Helper
 .idea/ApifoxUploaderProjectSetting.xml
+/.idea/.gitignore
+/.idea/.name
+/.idea/editor.xml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/Nietchux.iml
+/.idea/vcs.xml

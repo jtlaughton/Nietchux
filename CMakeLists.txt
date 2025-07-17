@@ -32,6 +32,13 @@ include_directories(
 add_subdirectory(bootloader)
 add_subdirectory(kernel)
 
+# Boot image creation using your shell script
+add_custom_target(boot_image
+    COMMAND ${CMAKE_SOURCE_DIR}/tools/mkimage.sh
+    DEPENDS stage1_boot stage2_boot kernel
+    COMMENT "Creating boot image with all components"
+)
+
 # Custom targets for QEMU
 add_custom_target(run
     COMMAND qemu-system-m68k -M q800 -cpu m68040 -m 128 

@@ -14,12 +14,6 @@ include_directories(
         ${CMAKE_SOURCE_DIR}/kernel/include
 )
 
-# Include directories
-include_directories(
-        ${CMAKE_SOURCE_DIR}/bootloader/include
-        ${CMAKE_SOURCE_DIR}/kernel/include
-)
-
 # Add subdirectories
 add_subdirectory(bootloader)
 add_subdirectory(kernel)

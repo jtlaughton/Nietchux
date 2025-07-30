@@ -1,6 +1,13 @@
 # Kernel
 add_executable(kernel
-    src/main.c
+        src/init/main.c
+        src/fs/ext2.c
+        src/fs/vfs.c
+        src/dev/console.c
+        src/dev/ide.c
+        src/dev/serial.c
+        src/arch/powerpc/cpu.c
+        src/arch/powerpc/mmu.c
 )
 
 # Include headers
